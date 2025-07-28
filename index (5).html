@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELITE ARENA - ESPORTS WEBSITE</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Arial Black', sans-serif;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      padding: 20px;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;#42445A
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    section {
+      display: none;
+      padding: 50px 20px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+      margin-bottom: 30px;
+    }
+
+    p, div {
+      font-size: 20px;
+      line-height: 1.6;
+      text-shadow: 0 0 8px white;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      margin: 0 10px;
+      filter: brightness(100%) drop-shadow(0 0 8px white);
+    }
+
+    iframe {
+      width: 100%;
+      height: 1200px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#" onclick="showSection('about')">ABOUT</a>
+    <a href="#" onclick="showSection('schedule')">SCHEDULE</a>
+    <a href="#" onclick="showSection('registration')">REGISTER</a>
+    <a href="#" onclick="showSection('contact')">CONTACT</a>
+  </nav>
+
+  <section id="about" class="active">
+    <h1>🚀 ABOUT ELITE ARENA</h1>
+    <p>
+      ELITE ARENA EK TOP-TIER FREE FIRE ESPORTS PLATFORM HAI JO COMPETITIVE TOURNAMENTS, DAILY CUSTOM ROOMS, AUR GAMING COMMUNITY DEVELOPMENT PAR FOCUS KARTA HAI.
+      <br/><br/>
+      HUM HAR DIN PAID TOURNAMENTS HOST KARTE HAIN JISME 12+ TOP SQUADS PARTICIPATE KARTE HAIN — WITH INSTANT ROOM ID/PASSWORD, STRICT RULES, AUR FAIR PLAY MONITORING.
+      <br/><br/>
+      PRIZE POOL FIXED HOTA HAI, ENTRY ₹30 SE START HOTI HAI AUR SAB KUCH PROPERLY TIME-BASED FORMAT ME CONDUCT KIYA JATA HAI.
+      <br/><br/>
+      ELITE ARENA KA MAQSAD HAI INDIA KE UN SAB PLAYERS KO PLATFORM DENA JO SERIOUSLY SCRIMS KHELNA CHAHTE HAIN, APNA SHOTCALLING, TEAMWORK & STRATEGY STRONG KARNA CHAHTE HAIN.
+      <br/><br/>
+      HUMEIN FARK PADTA HAI TRANSPARENCY, FAIRNESS AUR FAST COORDINATION SE — ISLIYE HUMNE AUTOMATED REGISTRATION, LIVE SCHEDULES, AUR QUICK PAYOUTS IMPLEMENT KIYE HAIN.
+      <br/><br/>
+      TUMHARE SQUAD KO SIRF SKILL NAHI, PLATFORM BHI CHAHIYE — AND ELITE ARENA IS THAT PLATFORM.
+      <br/><br/>
+      JOIN THE REVOLUTION. PLAY SMART. DOMINATE DAILY. ONLY AT ELITE ARENA.
+    </p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/elite_arena.ff?igsh=MTV1eHRydHkxZjRodg==" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+      </a>
+      <a href="https://youtube.com/@elitearena.ff9?si=QfXWCwIMRhTDCpPG" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+      </a>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <h1>📅 DAILY TOURNAMENT SCHEDULE</h1>
+    <p>
+      🔰 ELITE ARENA PRESENTS 🔰 <br/>
+      🔥 FREE FIRE PAID TOURNAMENT 🔥<br/><br/>
+      📅 EVERYDAY | TIME – 3:00 PM SHARP<br/>
+      💸 ENTRY FEE – ₹10 PER TEAM<br/>
+      🎖️ 1ST PRIZE – ₹50 | 2ND PRIZE – ₹40<br/>
+      🎟️ 1 SLOT RESERVED FOR MANAGEMENT<br/><br/>
+      🗓️ FORMAT – SQUAD (B2B 3 MATCHES)<br/>
+      🗺️ MAP – BERMUDA | PURGATORY | KALAHARI (BPK)<br/>
+      📊 OFFICIAL POINT TABLE SYSTEM – POSITION BASED<br/><br/>
+      ✅ REGISTRATION VIA GOOGLE FORM ONLY<br/>
+      🎯 WEEKLY REWARD – TOP 3 TABLE TOPPERS GET FREE SLOT ON SUNDAY<br/><br/>
+      📥 FOR DAILY UPDATES & RESULTS –<br/>
+      📸 INSTAGRAM: @elite_arena.ff<br/>
+      📞 WHATSAPP: 7379014260<br/>
+      📧 EMAIL: onlyforbusiness1845@gmail.com
+    </p>
+  </section>
+
+  <section id="registration">
+    <h1>📝 REGISTRATION FORM</h1>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfr_9mSZCjWr_FH_z40sHONOze05jFFxOQ4d_3d1P5ZAmFOqA/viewform?embedded=true">Loading…</iframe>
+  </section>
+
+  <section id="contact">
+    <h1>📞 CONTACT US</h1>
+    <p>
+      📱 WHATSAPP: 7379014260<br/>
+      📧 EMAIL: elitearena.ff@gmail.com<br/>
+      📸 INSTAGRAM: @elite_arena.ff<br/>
+      ▶️ YOUTUBE: Elite Arena
+    </p>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
